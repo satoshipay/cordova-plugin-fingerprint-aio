@@ -345,9 +345,9 @@ public class Fingerprint extends CordovaPlugin {
                     KeyProperties.PURPOSE_ENCRYPT |
                             KeyProperties.PURPOSE_DECRYPT)
                     .setBlockModes(KeyProperties.BLOCK_MODE_CBC)
-                            // Require the user to authenticate with a fingerprint to authorize every use
-                            // of the key
-                    .setUserAuthenticationRequired(true)
+                            // Disabled due to problematic behaviour
+                            // see https://github.com/mjwheatley/cordova-plugin-android-fingerprint-auth/issues/88#issuecomment-330543827
+                    .setUserAuthenticationRequired(false)
                     .setEncryptionPaddings(KeyProperties.ENCRYPTION_PADDING_PKCS7)
                     .build());
             mKeyGenerator.generateKey();
