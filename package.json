@@ -1,5 +1,5 @@
 {
-  "name": "@satoshipay/cordova-plugin-fingerprint-aio",
+  "name": "cordova-plugin-fingerprint-aio",
   "version": "1.7.0",
   "description": "Cordova plugin to use fingerprint authentication on Android and iOS",
   "cordova": {
